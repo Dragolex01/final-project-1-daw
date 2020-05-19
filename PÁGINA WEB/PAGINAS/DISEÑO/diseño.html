@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DISEÑO</title>
+		<link rel="stylesheet" type="text/css" href="diseño.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+		<!-- TITULO -->
+		<h1 align="center">DISEÑA A TU GUSTO</h1>
+		<p align="center">Haz click sobre los diferentes colores para escoger el que más te guste</p>
+
+		<!-- IMAGEN -->
+		<table align="center">
+			<tr>
+				<td colspan="6" height="400px"><img src="IMAGENES/blanco.png" id="foto"></td>
+			</tr>
+			<tr align="center">
+				<td><button onclick="cambioBlanco()"><img src="COLORES/blanco.png"></button></td>
+				<td><button onclick="cambioRojo()"><img src="COLORES/rojo.png"></button></td>
+				<td><button onclick="cambioAzul()"><img src="COLORES/azul.png"></button></td>
+				<td><button onclick="cambioVerde()"><img src="COLORES/verde.png"></button></td>
+				<td><button onclick="cambioNaranja()"><img src="COLORES/naranja.png"></button></td>
+				<td><button onclick="cambioNegro()"><img src="COLORES/negro.png"></button></td>
+			</tr>
+		</table>
+
+		<!-- SCRIPT -->
+		<script type="text/javascript">
+
+			function cambioBlanco(){
+				var imagen = document.getElementById("foto");
+				imagen.src = "IMAGENES/blanco.png";
+			}
+
+			function cambioRojo(){
+				var imagen = document.getElementById("foto");
+				imagen.src = "IMAGENES/rojo.png";
+			}
+
+			function cambioAzul(){
+				var imagen = document.getElementById("foto");
+				imagen.src = "IMAGENES/azul.png";
+			}
+
+			function cambioVerde(){
+				var imagen = document.getElementById("foto");
+				imagen.src = "IMAGENES/verde.png";
+			}
+
+			function cambioNaranja(){
+				var imagen = document.getElementById("foto");
+				imagen.src = "IMAGENES/naranja.png";
+			}
+
+			function cambioNegro(){
+				var imagen = document.getElementById("foto");
+				imagen.src = "IMAGENES/negro.png";
+			}
+
+		</script>
+
+	</body>
+</html>

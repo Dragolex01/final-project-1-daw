@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>INICIO</title>
+		<link rel="stylesheet" type="text/css" href="inicio.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+		<!-- SECTION -->
+		<section align="center">
+			
+			<!-- SLIDER -->
+			<div align="center" id="slider">
+				<table>
+					<tr>
+						<td colspan="2"><img src="../../IMAGENES/SLIDER/COCHES/imagen1.jpg" id="imagen"></td>
+					</tr>
+					<tr>
+						<td align="right"><button onclick="anterior()"><img src="../../IMAGENES/SLIDER/FLECHAS/FlechaIzq.png" class="flechas"></button></td>
+						<td align="left"><button onclick="posterior()"><img src="../../IMAGENES/SLIDER/FLECHAS/FlechaDer.png" class="flechas"></button></td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- TITULO -->
+			<h1 align="center" id="tituloCatalogo">VISITA NUESTRO CATÁLOGO</h1>
+
+			<!-- VIDEO -->
+
+			<iframe id="youtube" src="https://www.youtube.com/embed/3_qOWIMsDrs" frameborder="0" allowfullscreen></iframe>
+
+			<video id="descargado" controls="autoplay">
+				<source src="VIDEO/Mustang.mp4" type="video/mp4">
+			</video>
+
+		</section>
+
+
+
+
+		<!-- SCRIPT -->
+		<script type="text/javascript">
+			var cont = 1;
+
+			function anterior(){
+				cont--;
+				
+				if(cont == 0){
+					cont = 4;
+				}
+
+				var imagen = document.getElementById("imagen");
+				imagen.src = "../../IMAGENES/SLIDER/COCHES/imagen" + cont + ".jpg";
+
+			}
+
+			function posterior(){
+				cont++;
+
+				if(cont == 5){
+					cont = 1;
+				}
+
+				var imagen = document.getElementById("imagen");
+				imagen.src = "../../IMAGENES/SLIDER/COCHES/imagen" + cont + ".jpg";
+			}
+
+		</script>
+
+	</body>
+</html>

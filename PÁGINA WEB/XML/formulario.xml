@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE formularios SYSTEM "./validarformulario.dtd">
+<?xml-stylesheet type="text/xsl" href="xslFormulario.xsl"?>
+<formularios>
+    <formulario>
+        <nombre>Antonio</nombre>
+        <apellido>Garcia</apellido>
+        <email>antoniogarcia@gmail.com</email>
+        <tipo>valoracion</tipo>
+        <mensaje>Mi opinión es positiva ya que la información se actualiza constantemente</mensaje>
+    </formulario>
+</formularios>

@@ -1,0 +1,37 @@
+body{
+	background-color: silver;
+	font-family: courier new;
+}
+
+h1{
+	text-decoration: underline;
+}
+
+button{
+	border: none;
+	outline: none;
+	background-color: silver;
+}
+
+#imagen{
+	width: 1000px;
+	height: 500px;
+}
+
+#youtube{
+	width: 540px;
+	height: 300px;
+}
+
+#descargado{
+	width: 540px;
+	height: 300px;
+}
+
+#slider{
+	padding-bottom: 120px;
+}
+
+#tituloCatalogo{
+	padding-bottom: 50px;
+}

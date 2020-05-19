@@ -1,0 +1,28 @@
+body{
+	background-color: silver;
+	font-family: courier new;
+}
+
+img{
+	width: 35%;
+}
+
+h1{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+button{
+	background-color: silver;
+	border: none;
+	outline: none;
+}
+
+table{
+	width: 80%;
+	padding-top: 30px;
+}
+
+#foto{
+	width: 100%;
+}
