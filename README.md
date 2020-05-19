@@ -1,2 +1,2 @@
 # PÁGINA WEB
-https://dragolex01.github.io/PÁGINA_WEB/index.html
+https://dragolex01.github.io/PÁGINA%20WEB/index.html
