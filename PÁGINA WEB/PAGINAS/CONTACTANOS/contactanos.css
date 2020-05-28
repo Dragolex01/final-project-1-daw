@@ -1,10 +1,12 @@
 body{
-	background-color: lightblue;
+
+	background-image: url(../../IMAGENES/FONDOS/fondo.png);
 	font-family: courier new;
+	color: white;
 }
 
 table, td, th{
-	border: 1px solid black;
+	border: 2px solid orange;
 	border-collapse: collapse;
 }
 
@@ -16,6 +18,37 @@ th, td{
 	width: 100%;
 }
 
+#usuario{
+	width: 100%;
+}
+
 #botones{
 	padding-top: 2%;
+}
+
+#volverMenu{
+	width: 300px;
+	position: absolute;
+}
+
+#imagenFlecha{
+	width: 50px;
+	float: left;
+	padding-right: 20px;
+	margin-top: -8px;
+}
+
+#botonMenu{
+	width: 130px;
+	height: 35px;
+}
+
+h2{
+	text-decoration: underline;
+}
+
+#visor{
+	width: 50%;
+	height: 550px;
+	border: none;
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.prueba.es/catalogo">
+    
+
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="categorias">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="mustang_mach-e">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"></xs:element>
+                                        <xs:element name="precio" type="xs:string"></xs:element>
+                                        <xs:element name="motor" type="xs:string"></xs:element>
+                                        <xs:element name="potencia" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="plazas" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="paquete" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ford_mustang_ecoboost">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"></xs:element>
+                                        <xs:element name="precio" type="xs:string"></xs:element>
+                                        <xs:element name="motor" type="xs:string"></xs:element>
+                                        <xs:element name="potencia" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="plazas" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="paquete" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

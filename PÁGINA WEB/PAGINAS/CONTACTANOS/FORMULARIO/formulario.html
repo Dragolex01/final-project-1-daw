@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CONTACTANOS</title>
+		<link rel="stylesheet" type="text/css" href="formulario.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+		<!-- FORMULARIO -->
+		<section>
+			<h1 align="center">CONTACTANOS</h1>
+			<p align="center">Rellena el siguiente formulario para realizar una consulta</p>
+		
+		
+		<!-- FORMULARIO -->
+		
+			<table align="center">
+			<tr>
+				<th id="usuarioForm">Usuario</th>
+				<td><input type="text" id="usuario"></td>
+			</tr>
+			<tr>
+				<th id="emailForm">Email</th>
+				<td><input type="Email" id="email"></td>
+			</tr>
+			<tr>
+				<th id="tipoForm">Tipo</th>
+				<td class="centro">
+					<select name="opcion" id="tipo">
+							<option value="1">Elige una opción</option>
+							<option value="2">Valoración</option>
+							<option value="3">Información</option>
+							<option value="4">Otro</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th id="mensajeForm">Mensaje</th>
+				<td><textarea id="texto" rows="10" cols="50"></textarea></td>
+			</tr>
+		</table>
+		</section>
+		
+
+		<!-- BOTON ENVIAR -->
+		<section align="center" id="botonEnviar">
+			<button onclick="enviar()">Enviar</button>
+		</section>
+
+		<!-- INFORMACION -->
+		<section>
+			<p align="center" id="textoFinal"></p>
+		</section>
+		
+
+		<!-- SCRIPT -->
+		<script type="text/javascript">
+			
+			function enviar() {
+				var usuario = document.getElementById("usuario").value;
+				var email = document.getElementById("email").value;
+				var tipo = document.getElementById("tipo").value;
+				var mensaje = document.getElementById("texto").value;
+
+				var expresion = /\w+@\w+\.+[a-z]/;
+
+				if(tipo == 1){
+					alert("Error, tipo de mensaje invalido");
+					document.getElementById("tipoForm").style.color = "red";
+				}else{
+					if(tipo == 2){
+						tipo = 'Valoración';
+						document.getElementById("tipoForm").style.color = "white";
+					}else{
+						if(tipo == 3){
+							tipo = 'Información';
+							document.getElementById("tipoForm").style.color = "white";
+						}else{
+							tipo = 'Otro';
+							document.getElementById("tipoForm").style.color = "white";
+						}
+					}
+				}
+
+				if(usuario === "" || email === "" || mensaje === ""){
+					document.getElementById("textoFinal").innerHTML = '<p>Hay uno o más campos vacios</p>';
+					document.getElementById("textoFinal").style.color = "red";
+
+					if(usuario === ""){
+						document.getElementById("usuarioForm").style.color = "red";
+					}else{
+						document.getElementById("usuarioForm").style.color = "white";
+					}
+
+					if(email === ""){
+						document.getElementById("emailForm").style.color = "red";
+					}else if(!expresion.test(email)){
+						alert("El campo Email es incorrecto");
+						document.getElementById("emailForm").style.color = "red";
+					}else{
+						document.getElementById("emailForm").style.color = "white";
+					}
+
+					if(mensaje === ""){
+						document.getElementById("mensajeForm").style.color = "red";
+					}else{
+						document.getElementById("mensajeForm").style.color = "white";
+					}
+
+				}else{
+					document.getElementById("textoFinal").innerHTML = '<p>' + usuario + ', se ha enviado correctamente su mensaje de tipo ' + tipo + ' con el siguiente mensaje: ' + mensaje + '. Se le contestará lo antes posible al correo: ' + email + ' </p>';
+					document.getElementById("usuarioForm").style.color = "white";
+					document.getElementById("emailForm").style.color = "white";
+					document.getElementById("tipoForm").style.color = "white";
+					document.getElementById("mensajeForm").style.color = "white";
+					document.getElementById("textoFinal").style.color = "white";
+
+					var info = [usuario, email, tipo, mensaje];
+				}			
+			}
+
+		</script>
+
+	</body>
+</html>

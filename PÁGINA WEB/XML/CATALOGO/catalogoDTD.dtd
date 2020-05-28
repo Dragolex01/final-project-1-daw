@@ -1,0 +1,11 @@
+<!ELEMENT catalogo (categorias) >
+<!ELEMENT categorias (mustang_mach-e, ford_mustang_ecoboost)>
+<!ELEMENT mustang_mach-e (nombre, precio, motor, potencia, plazas, paquete)>
+<!ELEMENT ford_mustang_ecoboost (nombre, precio, motor, potencia, plazas, paquete)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT motor (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
+<!ELEMENT plazas (#PCDATA)>
+<!ELEMENT paquete (#PCDATA)>

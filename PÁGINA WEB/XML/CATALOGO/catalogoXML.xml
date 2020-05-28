@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="catalogoXSL.xsl"?>
+<!DOCTYPE catalogo SYSTEM "catalogoDTD.dtd">
+<p:catalogo xmlns:p="http://www.prueba.es/catalogo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.prueba.es/catalogo catalogoXSD.xsd">
+    <categorias>
+        <mustang_mach-e>
+            <nombre>Mustang Mach-E</nombre>
+            <precio>43.895</precio>
+            <motor>electrico</motor>
+            <potencia>337</potencia>
+            <plazas>5</plazas>
+            <paquete></paquete>
+        </mustang_mach-e>
+        <ford_mustang_ecoboost>
+            <nombre>Ford Mustang Ecoboost</nombre>
+            <precio>43.092</precio>
+            <motor>gasolina</motor>
+            <potencia>330</potencia>
+            <plazas>4</plazas>
+            <paquete>Alto desempeño</paquete>
+        </ford_mustang_ecoboost>
+    </categorias>
+</p:catalogo>

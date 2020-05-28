@@ -7,50 +7,23 @@
 	</head>
 	<body>
 
-		<!-- TITULO -->
-		<h1 align="center">CONTACTANOS</h1>
-		<p align="center">Rellena el siguiente formulario para realizar una consulta</p>
+		<!-- ASIDE -->
+		<aside id="volverMenu">
+			<p>¿Quieres volver al menú?</p>
+			<img src="../../IMAGENES/CONTACTANOS/flechaIzq.png" id="imagenFlecha">
+			<a href="../../index.html"><button id="botonMenu">Volver al menú</button></a>
+		</aside>
 
-		<!-- FORMULARIO -->
-		<table align="center">
-			<tr>
-				<th>Nombre</th>
-				<td><input type="text" id="nombre"></td>
-				<td><input type="text" id="apellido"></td>
-			</tr>
-			<tr>
-				<th>Email</th>
-				<td colspan="2"><input type="Email" id="email"></td>
-			</tr>
-			<tr>
-				<th>Tipo</th>
-				<td class="centro" colspan="2">
-					<select name="opcion" id="tipo">
-							<option value="1">Elige una opción</option>
-							<option value="2">Valoración</option>
-							<option value="3">Información</option>
-							<option value="4">Otro</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<th>Mensaje</th>
-				<td colspan="2"><textarea id="texto" rows="10" cols="50"></textarea></td>
-			</tr>
-		</table>
-
-		<!-- BOTONES -->
-		<div align="center" id="botones">
-			<button onclick="enviar()">Enviar</button>
-			<a href="../../index.html"><button>Volver al menú</button></a>
-		</div>
+		<!-- IFRAME -->
+		<section align="center">
+			<iframe align="center" src="FORMULARIO/formulario.html" name="ventana" id=visor></iframe>
+		</section>
 
 		<!-- SCRIPT -->
 		<script type="text/javascript">
 			
-			function enviar() {
-				var nombre = document.getElementById("nombre").value;
-				var apellidos = document.getElementById("apellido").value;
+			function registrarse() {
+				var usuario = document.getElementById("usuario").value;
 				var email = document.getElementById("email").value;
 				var tipo = document.getElementById("tipo").value;
 				var mensaje = document.getElementById("texto").value;
@@ -60,17 +33,19 @@
 				}else{
 					if(tipo == 2){
 						tipo = 'Valoración';
-						var info = [nombre, apellido, email, tipo, mensaje];
+						var info = [usuario, email, tipo, mensaje];
 					}else{
 						if(tipo == 3){
 							tipo = 'Información';
-							var info = [nombre, apellido, email, tipo, mensaje];
+							var info = [usuario, email, tipo, mensaje];
 						}else{
 							tipo = 'Otro';
-							var info = [nombre, apellido, email, tipo, mensaje];
+							var info = [usuario, email, tipo, mensaje];
 						}
 					}
 				}
+
+				document.getElementById("textoFinal").innerHTML = '<p>' + usuario + ', se ha enviado correctamente su mensaje de tipo ' + tipo + ' con el siguiente mensaje: ' + mensaje + '. Se le contestará lo antes posible al correo: ' + email + ' </p>';
 							
 			}
 

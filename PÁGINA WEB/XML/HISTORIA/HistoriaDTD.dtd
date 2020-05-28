@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT historia (ford, mustang) >
+<!ELEMENT ford (titulo, fecha_fundada, fundador, nacimiento, muerte, origen, primer_coche) >
+<!ELEMENT mustang (titulo, fecha_fundada, fundador, nacimiento, muerte, origen, primer_coche) >
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha_fundada (#PCDATA)>
+<!ELEMENT fundador (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+<!ELEMENT muerte (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT primer_coche (#PCDATA) >

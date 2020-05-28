@@ -1,0 +1,52 @@
+body{
+	
+	font-family: courier new;
+	color: white;
+}
+
+table, td, th{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 10px;
+}
+
+#email{
+	width: 100%;
+}
+
+#usuario{
+	width: 100%;
+}
+
+#botones{
+	background-color: ;
+	width: 500px;
+	height: 50px;
+}
+
+button{
+	height: 40px;
+	width: 70px;
+	border: ;
+}
+
+textarea, input{
+	background-color: rgb(82,70,147);
+	color: white;
+}
+
+#registrarse{
+	width: 200px;
+	position: absolute;
+}
+
+h2{
+	text-decoration: underline;
+}
+
+#botonEnviar{
+	padding-top: 10px;
+}

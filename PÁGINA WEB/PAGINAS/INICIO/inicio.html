@@ -7,32 +7,37 @@
 	</head>
 	<body>
 
-		<!-- SECTION -->
+		<!-- SLIDER -->
+		<section align="center" id="slider">
+			<table align="center">
+				<tr>
+					<td colspan="2"><img src="../../IMAGENES/SLIDER/COCHES/imagen1.jpg" id="imagen"></td>
+				</tr>
+				<tr>
+					<td align="right"><button onclick="anterior()"><img src="../../IMAGENES/SLIDER/FLECHAS/FlechaIzq.png" class="flechas"></button></td>
+					<td align="left"><button onclick="posterior()"><img src="../../IMAGENES/SLIDER/FLECHAS/FlechaDer.png" class="flechas"></button></td>
+				</tr>
+			</table>
+		</section>
+
+		<!-- CONTENIDO -->
 		<section align="center">
-			
-			<!-- SLIDER -->
-			<div align="center" id="slider">
-				<table>
-					<tr>
-						<td colspan="2"><img src="../../IMAGENES/SLIDER/COCHES/imagen1.jpg" id="imagen"></td>
-					</tr>
-					<tr>
-						<td align="right"><button onclick="anterior()"><img src="../../IMAGENES/SLIDER/FLECHAS/FlechaIzq.png" class="flechas"></button></td>
-						<td align="left"><button onclick="posterior()"><img src="../../IMAGENES/SLIDER/FLECHAS/FlechaDer.png" class="flechas"></button></td>
-					</tr>
-				</table>
-			</div>
 
 			<!-- TITULO -->
 			<h1 align="center" id="tituloCatalogo">VISITA NUESTRO CATÁLOGO</h1>
 
-			<!-- VIDEO -->
+			<!-- VIDEOS -->
 
 			<iframe id="youtube" src="https://www.youtube.com/embed/3_qOWIMsDrs" frameborder="0" allowfullscreen></iframe>
 
 			<video id="descargado" controls="autoplay">
 				<source src="VIDEO/Mustang.mp4" type="video/mp4">
-			</video>
+			</video><br>
+
+			<!-- AUDIO -->
+			<audio controls autoplay>
+				<source src="AUDIO/AUDIO.mp3">
+			</audio>
 
 		</section>
 

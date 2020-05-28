@@ -5,6 +5,11 @@ body{
 img{
 	width: 270px;
 	height: 170px;
+	transition: 1s;
+}
+
+img:hover{
+	transform: scale(1.25);
 }
 
 table{
